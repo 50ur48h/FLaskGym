@@ -14,7 +14,7 @@ variables:
   azureServiceConnectionId: 'c51f73c2-90da-4e91-ba8e-7e75224e545a'
   
   # Web app name
-  webAppName: 'GymManagement'
+  webAppName: 'flaskgymmm'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -80,7 +80,7 @@ stages:
             displayName: 'Use Python version'
 
           - task: AzureWebApp@1
-            displayName: 'Deploy Azure Web App : GymManagement'
+            displayName: 'Deploy Azure Web App : flaskgymmm'
             inputs:
               azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
