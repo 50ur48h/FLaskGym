@@ -9,10 +9,10 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'eswar@259522'
-app.config['MYSQL_DB'] = 'Gym'
+app.config['MYSQL_HOST'] = 'flaskgymmmserver.database.windows.net'
+app.config['MYSQL_USER'] = 'flaskgymadmin'
+app.config['MYSQL_PASSWORD'] = 'Flask12345'
+app.config['MYSQL_DB'] = 'flaskgymmm'
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 
 mysql = MySQL(app)
